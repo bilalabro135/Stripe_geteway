@@ -14,12 +14,12 @@ class StripeController extends Controller
     	//print_r($req->all()); die();
     	Stripe\Stripe::setApiKey(env('STRIPE_SECRET'));
     	$data = Stripe\Charge::create([
-    			"amount"=>200*100,
+    			"amount"=>120*100,
     			"currency"=>"usd",
     			"source"=>$req->stripeToken,
-    			"description"=>"Test payment from expert rohila 2"
+    			"description"=>'Payment has been successful "By Geeksroot"'
     	]);
-        echo "<pre>"; print_r($data); die();
+        // echo "<pre>"; print_r($data); die();
 
     	Session::flash("success","Payment successfully!");
 

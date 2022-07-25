@@ -26,16 +26,16 @@
   
 <div class="container">
   
-    <h1>Laravel 8 - Stripe Payment Gateway Integration Example <br/> Expert Rohila</h1>
+    <h3 align="center">Laravel 8 - Stripe Payment Gateway Integration <br/><b>Geeksroot</b></h3>
   
     <div class="row">
         <div class="col-md-6 col-md-offset-3">
             <div class="panel panel-default credit-card-box">
-                <div class="panel-heading display-table" >
+                <div class="panel-heading display-table" style="width: 100%;">
                     <div class="row display-tr" >
                         <h3 class="panel-title display-td" >Payment Details</h3>
                         <div class="display-td" >                            
-                            <img class="img-responsive pull-right" src="http://i76.imgup.net/accepted_c22e0.png">
+                            <img class="img-responsive pull-right" width="100px" src="https://woocommerce.com/wp-content/uploads/2011/12/stripe-logo-blue.png">
                         </div>
                     </div>                    
                 </div>
@@ -43,7 +43,7 @@
   
                     @if (Session::has('success'))
                         <div class="alert alert-success text-center">
-                            <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
+                            <a href="#" class="close" data-dismiss="dismiss" aria-label="close">×</a>
                             <p>{{ Session::get('success') }}</p>
                         </div>
                     @endif
